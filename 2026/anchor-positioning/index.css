@@ -1,0 +1,43 @@
+/* ANCHOR POSITIONING */
+
+.anchor-btn {
+   anchor-name: --tooltip-anchor;
+}
+
+/* TOOLTIP TETHERED TO ANCHOR */
+.tooltip {
+   position: fixed;
+   position-anchor: --tooltip-anchor;
+
+   /* POSITION RELATIVE TO ANCHOR */
+   top: anchor(bottom);
+   left: anchor(center);
+   translate: -50% 0;
+
+   /* FALLBACK POSITIONS IF OVERFLOWING VIEWPORT */
+   position-try-fallbacks: flip-block, flip-inline;
+
+   /* STYLING */
+   background: #161b22;
+   border: 1px solid #30363d;
+   border-radius: 6px;
+   padding: 8px 12px;
+   color: #c9d1d9;
+   width: max-content;
+   max-width: 250px;
+}
+
+/* ANCHOR POPOVER */
+.popover-anchor {
+   anchor-name: --popover-anchor;
+}
+
+.popover {
+   position: fixed;
+   position-anchor: --popover-anchor;
+
+   right: anchor(left);
+   top: anchor(top);
+
+   position-try-fallbacks: flip-inline;
+}

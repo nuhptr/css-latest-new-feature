@@ -1,0 +1,13 @@
+/* ENABLE SNAP ON EACH ITEM */
+.snap-item {
+   container-type: scroll-snap;
+   container-name: snap-item;
+}
+
+/* SNAPEPD: -- WHEN SNAPPED TO SCROLL-SNAP */
+@container snap-item (snapped: x) {
+   .item-inner {
+      opacity: 1;
+      transform: scale(1);
+   }
+}

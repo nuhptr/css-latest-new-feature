@@ -1,0 +1,30 @@
+select {
+   appearance: base-select;
+}
+
+select::picker(select) {
+   background: #161b22;
+   border: 2px solid #58a6ff;
+   border-radius: 0 0 10px 10px;
+}
+
+/* INPUT PICKER CHANGE ROTATION */
+select::picker-icon {
+   content: url("chevron.svg");
+}
+select:open::picker-icon {
+   transform: rotate(180deg);
+}
+
+select:open {
+   border-color: #58a6ff;
+   border-bottom-right-radius: 0;
+   border-bottom-left-radius: 0;
+}
+
+option:checked {
+   background: rgba(88, 166, 255, 0.15);
+}
+option::checkmark {
+   content: url("check.svg");
+}

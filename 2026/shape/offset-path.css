@@ -1,0 +1,9 @@
+.offset-path {
+   offset-path: shape(
+      from 20px 100px,
+      curve to 100px 40px with 50px 40px,
+      to 200px 100px with 150px 40px,
+      to 300px 100px
+   );
+   animation: offset-path move 2.5s infinite;
+}

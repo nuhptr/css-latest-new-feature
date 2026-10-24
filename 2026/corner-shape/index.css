@@ -1,0 +1,22 @@
+/* ALL BORDER VALUES IN EXAMPLE PURPOSE AND YOU CAN ADJUST BASED ON YOUR NEEDS */
+
+.squircle {
+   border-radius: 120px;
+   corner-shape: squircle;
+}
+.bevel {
+   border-radius: 120px;
+   corner-shape: bevel;
+}
+.notch {
+   border-radius: 0px;
+   corner-shape: notch;
+}
+.scoop {
+   border-radius: 105px;
+   corner-shape: scoop;
+}
+.mixed {
+   border-radius: 70px;
+   corner-shape: mixed;
+}

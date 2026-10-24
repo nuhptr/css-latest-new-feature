@@ -1,0 +1,32 @@
+/* TYPED attr() — USE HTML ATTRIBUTES DIRECTLY IN CSS */
+
+/* COLOR FROM ATTRIBUTE */
+/* <div data-color="#58a6ff"> */
+.badge {
+   background-color: attr(data-color type(<color>), #ccc);
+   color: white;
+   padding: 4px 10px;
+   border-radius: 12px;
+}
+
+/* SIZE FROM ATTRIBUTE */
+/* <div data-size="200"> */
+.avatar {
+   width: attr(data-size type(<length>), 48px);
+   height: attr(data-size type(<length>), 48px);
+   border-radius: 50%;
+}
+
+/* PROGRESS BAR DRIVEN BY ATTRIBUTE */
+/* <div class="progress-bar" data-progress="75"> */
+.progress-bar {
+   --progress: attr(data-progress type(<number>), 0);
+
+   background: linear-gradient(
+      to right,
+      #58a6ff calc(var(--progress) * 1%),
+      #21262d calc(var(--progress) * 1%)
+   );
+   height: 8px;
+   border-radius: 4px;
+}
