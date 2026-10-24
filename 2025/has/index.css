@@ -1,0 +1,29 @@
+@layer validation {
+   .input-group {
+      --icon-size: 1.75rem;
+
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: fit-content;
+
+      &:has(.input:user-valid) {
+         --default-border-color: #27ae60;
+         --focus-color: #0f0;
+
+         &::after {
+            content: "✓";
+         }
+      }
+
+      &:has(.input:user-invalid) {
+         --default-border-color: #eb5757;
+         --focus-color: #f00;
+
+         &::after {
+            content: "✗";
+         }
+      }
+   }
+}

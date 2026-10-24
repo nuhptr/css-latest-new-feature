@@ -1,0 +1,12 @@
+/* @property */
+
+@property --custom {
+   syntax: "<color>";
+   inherits: false;
+   initial-value: red;
+}
+
+body {
+   --custom: green;
+   color: var(--custom);
+}

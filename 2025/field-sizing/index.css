@@ -1,0 +1,11 @@
+.chat-input {
+   padding: 0.5rem calc(
+      var(--icon-size) * 4 + var(--icon-offset) + 0.25rem
+   );
+   color: var(--foreground-color);
+   line-height: var(--line-height);
+   min-height: var(--base-height);
+   flex-grow: 1;
+   scrollbar-width: none;
+   field-sizing: content;
+}

@@ -1,0 +1,17 @@
+.btn {
+   --bg-color: oklch(92% 0 0);
+
+   background: var(--bg-color);
+   /* UPDATE ON VAR */
+   border: 1px solid oklch(from var(--bg-color) calc(l - 0.15) c h);
+   outline: none;
+   cursor: pointer;
+   padding: 0.5em 1em;
+   border-radius: 0.3em;
+
+   &:hover,
+   &:focus-visible {
+      background-color: oklch(from var(--bg-color) calc(l - 0.075) c h);
+      box-shadow: 0 0 5px 0 oklch(from var(--bg-color) calc(l - 0.15) c h);
+   }
+}
