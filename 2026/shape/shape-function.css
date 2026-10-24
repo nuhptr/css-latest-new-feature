@@ -1,0 +1,33 @@
+/* Using line commands */
+
+.star {
+   clip-path: shape(
+      from 50% 0%,
+      to 61% 35%,
+      to 98% 35%,
+      to 68% 57%,
+      to 79% 91%,
+      to 50% 70%,
+      to 21% 91%,
+      to 32% 57%,
+      to 2% 35%,
+      to 39% 35% close
+   );
+}
+
+/* Using arc commands */
+
+.star-arc {
+   clip-path: shape(
+      from 50% 0%,
+      arc 11% 35% 0deg 1turn,
+      arc 37% 35% 0deg 1turn,
+      arc 68% 57% 0deg 1turn,
+      arc 79% 91% 0deg 1turn,
+      arc 50% 70% 0deg 1turn,
+      arc 21% 91% 0deg 1turn,
+      arc 32% 57% 0deg 1turn,
+      arc 2% 35% 0deg 1turn,
+      arc 39% 35% close
+   );
+}

@@ -1,0 +1,41 @@
+/* CONTAINER */
+.carousel {
+   scroll-marker-group: after;
+}
+
+/* CREATE MARKERS */
+.item::scroll-marker {
+   content: "";
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+}
+
+/* ACTIVE MARKER */
+::scroll-marker:target-current {
+   background: #58a6ff;
+}
+
+/* MARKER GROUP STYLING */
+.carousel::scroll-marker-group {
+   display: flex;
+   justify-content: center;
+   gap: 6px;
+}
+
+/* CREATE SCROLL BUTTONS */
+::scroll-button(left) {
+   content: "<-";
+}
+::scroll-button(right) {
+   content: "->";
+}
+
+/* SCROLL BUTTON STYLING */
+::scroll-button {
+   background: #21262d;
+   border: 1px solid #30363d;
+   border-radius: 6px;
+   width: 36px;
+   height: 36px;
+}

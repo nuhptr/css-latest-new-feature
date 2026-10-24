@@ -1,0 +1,13 @@
+/* ENABLE SCROLL STATE QUERIES */
+.header {
+   container-type: scroll-state;
+   container-name: sticky-header;
+}
+
+/* STUCK: -- WHEN STICKY ELEMENT IS STUCK */
+@container sticky-header scroll-state(stuck: top) {
+   .header-inner {
+      /* EXAMPLE */
+      background: linear-gradient(to right, #f0f6fc, #c9d1d9);
+   }
+}
