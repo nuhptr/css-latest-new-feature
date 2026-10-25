@@ -1,0 +1,13 @@
+/* RETURN POSITION AMONG SIBLINGS (1-INDEXED) */
+/* sibling-index() -> 1, 2, 3, 4, 5 */
+
+/* DYNAMIC WIDTH BASED ON POSITION */
+.dynamic {
+   width: calc(sibling-index() * 50px);
+}
+
+/* STAGGERED ANIMATION DELAY */
+.animation {
+   animation: pop-in 0.4s ease both;
+   animation-delay: calc(sibling-index() * 100);
+}

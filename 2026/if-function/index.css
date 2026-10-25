@@ -1,0 +1,20 @@
+/* STYLE() - CHECK CUSTOM PROPERTY VALUES */
+.custom {
+   background: if(style(--theme: dark): #161b22; style(--theme: light): #f0f6fc ; else: #21262d;);
+}
+
+/* FLEX DIRECTION BASED ON CONTAINER WIDTH */
+.custom-layout {
+   width: 100;
+   flex-direction: if(media(width >= 300px): row ; else: column);
+}
+
+/* OLD WAY */
+.custom-layout {
+   flex: auto;
+   flex-direction: column;
+
+   @media (min-width: 300px) {
+      flex-direction: row;
+   }
+}

@@ -1,0 +1,15 @@
+/* RESPONSIVE VALUE FUNCTION */
+@function --narrow-wide(--narrow, --wide) {
+   result: var(--wide);
+   @container (width < 300px) {
+      result: var(--narrow);
+   }
+}
+
+/* USAGE */
+.container {
+   flex-direction: --narrow-wide(column, row);
+}
+h2 {
+   font-size: --narrow-wide(1rem, 0.7rem);
+}

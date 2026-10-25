@@ -1,31 +1,26 @@
-/* TEXT-BOX — REMOVE EXTRA WHITESPACE ABOVE/BELOW TEXT */
-
-/* TRIM BOTH SIDES (TOP AND BOTTOM) */
-.heading {
-   font-size: 4rem;
-   text-box: trim-both cap alphabetic;
-   /* cap = trim top to capital letter height */
-   /* alphabetic = trim bottom to baseline */
+/* TRIM NORMAL */
+.text {
+   text-box: normal;
 }
 
-/* TRIM ONLY THE TOP */
-.subheading {
-   font-size: 2rem;
-   text-box: trim-start cap alphabetic;
+/* TRIM START */
+.text {
+   text-box: trim-start cap text;
 }
 
-/* EXAMPLE: PERFECTLY ALIGNED BUTTON TEXT */
-.btn-tight {
-   text-box: trim-both cap alphabetic;
-   padding: 10px 20px;
-   font-size: 1rem;
-   /* text now sits flush against padding edges */
+/* TRIM CAP: TRIMS TOP TO CAPITAL LETTER HEIGHT */
+/* TRIM BOTH: TOP TO CAPITAL LETTER HEIGHT */
+/* TEXT: DEFAULT, KEEPS HALF-LEADING ABOVE */
+/* EX: TRIMS TOP TO LOWERCASE X HEIGHT */
+.text {
+   text-box: trim-both cap text;
 }
-
-/* EXAMPLE: CARD TITLE FLUSH WITH CONTAINER */
-.card-title {
-   text-box: trim-both cap alphabetic;
-   font-size: 1.5rem;
-   margin: 0;
-   /* no invisible font whitespace pushing content down */
+.text {
+   text-box: trim-both text text;
+}
+.text {
+   text-box: trim-both ex text;
+}
+.text {
+   text-box: trim-both cap alphabethic;
 }
